@@ -1,11 +1,15 @@
 
-<html><head>Write here: </head><body>
+<html><head><marquee behavior="scroll" bgcolor="yellow" loop="-1" width="30%"><i><font color="blue"><strong>Today's date is :<span id="time"></span></strong>  </font></i></marquee>  </head><body>
 
 <input id="title" type="text"  onkeyup="Allow()" >
 <input type="submit" value="Save/Show" onclick="insert()" />
 <div id="display"></div>
 
-
+<script>
+    var today = new Date();
+    document.getElementById('time').innerHTML=today;
+</script>
+    
 <script type="text/javascript">
 var titles  = [];
 var titleInput  = document.getElementById("title");
