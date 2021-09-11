@@ -1,5 +1,5 @@
 
-<html><head><marquee behavior="scroll" bgcolor="black" loop="-1" width="30%"><i><font color="white"><strong>Time is: <span id="time"></span></strong>  </font></i></marquee>  </head><body>
+<html><head><marquee behavior="scroll" bgcolor="black" loop="-1" width="30%"><i><font color="white"><strong>Time now is: <span id="time"></span></strong>  </font></i></marquee>  </head><body>
 
 <input id="title" type="text"  onkeyup="Allow()" >
 <input type="submit" value="Save/Show" onclick="insert()" />
@@ -38,7 +38,7 @@ document.onkeydown = function(e){
 function clearAndShow () {
     titleInput.value = "";
     messageBox.innerHTML = "";
-    messageBox.innerHTML += titles.join(" ") + "<br><br/>";
+    messageBox.innerHTML += titles.join(" <br>") + "<br>";
 }
 </script>
 </body>
