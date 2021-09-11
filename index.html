@@ -1,5 +1,5 @@
 
-<html><head><marquee behavior="scroll" bgcolor="yellow" loop="-1" width="30%"><i><font color="blue"><strong>Today's date is :<span id="time"></span></strong>  </font></i></marquee>  </head><body>
+<html><head><marquee behavior="scroll" bgcolor="black" loop="-1" width="30%"><i><font color="white"><strong>Today's date is :<span id="time"></span></strong>  </font></i></marquee>  </head><body>
 
 <input id="title" type="text"  onkeyup="Allow()" >
 <input type="submit" value="Save/Show" onclick="insert()" />
@@ -25,6 +25,14 @@ function Allow(){
 function insert () {
     titles.push(titleInput.value);
     clearAndShow();
+}
+
+document.onkeydown = function(e){
+    e = e || window.event;
+    var key = e.which || e.keyCode;
+    if(key===13){
+        clearAndShow();
+    }
 }
 
 function clearAndShow () {
