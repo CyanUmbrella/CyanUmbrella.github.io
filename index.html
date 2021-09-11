@@ -1,7 +1,7 @@
 
 <html><head></head><body>
 
-<input id="title" type="text" maxlength="5"  onkeyup="Allow()" >
+<input id="title" type="text"  onkeyup="Allow()" >
 <input type="submit" value="Save/Show" onclick="insert()" />
 <div id="display"></div>
 
@@ -26,7 +26,7 @@ function insert () {
 function clearAndShow () {
     titleInput.value = "";
     messageBox.innerHTML = "";
-    messageBox.innerHTML += "Titles: " + titles.join(", ") + "<br/>";
+    messageBox.innerHTML += "Titles: " + titles.join(" ") + "<n/>";
 }
 </script>
 </body>
