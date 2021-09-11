@@ -1,1 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
 
+<h1>Blog</h1>
+
+<button onclick="showContent()">!</button>
+
+<template>
+  <p>test</p>
+</template>
+
+<script>
+function showContent() {
+  var temp = document.getElementsByTagName("template")[0];
+  var clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script>
+
+</body>
+</html>
